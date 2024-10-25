@@ -4,10 +4,10 @@ import "@/styles/globals.css";
 import { NearContext } from "@/context";
 
 import { Wallet } from "@/wallets/near";
-import { NetworkId, GuestbookNearContract } from "@/config";
+import { NetworkId, USDC_CONTRACT_ID_NEAR } from "@/config";
 
 const wallet = new Wallet({
-  createAccessKeyFor: GuestbookNearContract,
+  createAccessKeyFor: USDC_CONTRACT_ID_NEAR,
   networkId: NetworkId,
 });
 
