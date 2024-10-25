@@ -8,9 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "static:build": "next build && next export",
-    "static:serve": "serve out -p 3000",
+    "start": "serve out",
     "lint": "next lint"
   },
   "dependencies": {
