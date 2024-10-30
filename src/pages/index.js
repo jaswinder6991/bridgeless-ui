@@ -172,7 +172,7 @@ export default function LandingPage() {
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 text-white">
       <div className="container mx-auto px-4 py-8 relative z-10 flex-grow">
         <header className="flex justify-between items-center mb-12">
-          <h1 className="text-3xl font-bold">Bridgeless</h1>
+          <h1 className="text-3xl font-bold">DirectTransfer</h1>
           <Button 
             variant="outline" 
             className="bg-white text-blue-600 rounded-full hover:bg-blue-100 transition-colors duration-300" 
@@ -184,16 +184,13 @@ export default function LandingPage() {
 
         <main className="grid md:grid-cols-2 gap-12 items-start">
         <div className="space-y-6">
-             <h2 className="text-5xl font-bold leading-tight">Seamless USDC Transfers Between NEAR and Ethereum</h2>
-             <p className="text-xl">Experience the future of cross-chain transactions with our innovative bridgeless technology. Simple, fast, and secure.</p>
+             <h2 className="text-5xl font-bold leading-tight">Seamless USDC Transfers from NEAR to Ethereum</h2>
+             <p className="text-xl">A direct USDC transfer service that lets you send USDC from Near to any Ethereum address without traditional bridging.</p>
+             <p className="text-xl">When you send USDC to our Near contract, it uses Chain Signatures to initiate a USDC transfer on Ethereum through its controlled address.</p>
              <ul className="space-y-2">
                <li className="flex items-center">
                  <span className="bg-white text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-3">✓</span>
                  <p>No complicated steps or long waiting times</p>
-               </li>
-               <li className="flex items-center">
-                 <span className="bg-white text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-3">✓</span>
-                 <p>Customizable transaction fees</p>
                </li>
                <li className="flex items-center">
                  <span className="bg-white text-blue-600 rounded-full w-6 h-6 flex items-center justify-center mr-3">✓</span>
@@ -204,7 +201,7 @@ export default function LandingPage() {
           
           <Card className="bg-white text-blue-600">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-center">Bridge USDC Now</CardTitle>
+              <CardTitle className="text-2xl font-bold text-center">Swap USDC Now</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -279,7 +276,7 @@ export default function LandingPage() {
         </main>
       </div>
       <footer className="py-6 text-center text-sm opacity-75 mt-auto">
-        © 2024 Simple Bridge. All rights reserved. Powered by NEAR and Ethereum.
+        © 2024 Direct Transfer. All rights reserved. Powered by NEAR and Ethereum.
       </footer>
     </div>
   )
